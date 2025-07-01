@@ -1,1 +1,25 @@
-# riffnet
+# Riff Net
+*Note - name is subject to change.*
+
+I aim for this to be a musical artist recommender - it will output a list or ranking of artists one should look into, based on artists they already like. The technical basis of this will be a Graph Neural Network trained on a Knowledge Graph that links artists together based on features such as: 
+* Genre, subgenre
+* Age/era (e.g., 1980s vs 2020s)
+* Musical/sonical properties - general mood, tempo, etc.
+* General artist properties - number of albums/songs, year of first release, band makeup, etc.
+* (Tentative, but I'd like to try and take into account upcoming tours and new music, as well as social media presence and connections to other bands)
+
+### First Draft Proposal
+* Music / artist recommender - KG -> GNN implementation
+  * In addition to being a useful tool for me, this would also help me practice my deep learning implementation skills. 
+  * The key aim of this project would be to give me curated music artist recommendations, based on the artists I know I like. I want to be able to select an artist and look at other artists who are highly similar. Not entirely sure about what the final product would look like - perhaps it would provide a ranking of top artists I ought to look into based on a selected artist or a selected few artists.
+  * The idea I have in mind is to make a GNN of musical artists; not entirely sure about the span/range or how to control it, but ideally I'd like to focus on the ones I already really like, and expand outwards from there. So maybe all the unique artists present in my hard n heavy playlist or something. But what I want to do is to have each artist be a node, and to connect them to related artists via shared features such as genre (and subgenres), popularity, and just general traits about the artists. I'd also like to see if I can enhance this by pulling information from social media. There are accounts I follow on social media who specialize in posting about metal/alternative artists, and oftentimes I explore and tend to like the ones they post. Another thing - it makes me really sad when I get into artists just after they've finished touring, so it would also be nice to highlight or at least tag artists as "starting a tour soon" so that I can look into them early and won't miss their tour if I find out I like them. What I find interesting in my experiences is that while music providers generally recommend other artists based on what seems more like the music itself, it's a little more nuanced irl. I got into Bad Omens and ultimately metal as a whole because Waterparks fans liked them - and ofc Waterparks is not metal, so I wonder what aspect the two of those artists share that causes this overlap. Not sure I can really answer that, but worth thinking about. 
+  * Implementation details: 
+    * I'll pull the artists from my hard n heavy playlist for starters, using the Spotify API. Ultimately, it may be nice to, in whatever user interface I end up with, to provide the option of selecting a playlist to choose from (to determine the range of starter artists) but for testing purposes we can start easy.
+    * Generate features: 
+      * Also using the Spotify API, pull features about the artists. Not sure what features are still available via the endpoints but things like popularity, genre, etc. would be useful. I'm actually not sure about genres - I don't remember how specific Spotify gets w them but I'd like high specificity, since I generally am in the metal orbit already and we need that to be further broken down. A better option might be [pygn](https://github.com/cweichen/pygn) for the Gracenote API.
+        * I'm not sure if I can access "new album coming soon" sorta data from the Spotify API, I haven't seen that before
+        * Maybe do some feature engineering of sorts to see if you can grab number of albums, number of songs, year of first release, those sort of things.
+        * Nationality and gender? Feels kinda wrong to use those as a feature in recommendations BUT I feel like I tend to skew towards Western (+Australia) and male bands. Like if you were to recommend BABYMETAL (I think they're Japanese) I know I wouldn't like them.
+      * Not sure abt the feasibility of this, but try and pull social media data. To be honest there aren't a ton of music content creators I follow, maybe just like State of the Scene on Twitter and fellbrink on Insta. But that can be expanded with time. I can try and pull their posts and use some sort of NLP/NER technique to extract artists they mention within some time frame.
+      * Use the Bandsintown API to see what artists are starting a tour soon. Even if this is not used as a feature in training for the rankings, it can be used just to tag artists as starting tour soon.
+* Generalization: this is something that can be generalized - ideally, I want it to be a platform where anyone can input, say, a playlist link, and then see based on artists represented in that playlist what new artists they should look into. However, the social media aspect would be difficult. Unless I modified it such that it does some sort of follower intersection thing (% of followers of artist A who also follow artist B) but I don't believe that is super feasible. Will think about it some more.
