@@ -8,6 +8,50 @@ I aim for this to be a musical artist recommender - it will output a list or ran
 * General artist properties - number of albums/songs, year of first release, band makeup, etc.
 * (Tentative, but I'd like to try and take into account upcoming tours and new music, as well as social media presence and connections to other bands)
 
+### Rough Outline (Jul. 7, 2025)
+1. Grab playlist data from Spotify API.
+   * The information available from the Spotify API should be enough. Features such as the number of releases, popularity, etc.
+   * Later, in the UI itself, I would like the option to select a playlist instead of solely using a predefined one. This would then require the ability to automatically grab the playlist's most up-to-date features at any given moment. 
+   * Note: I don't think I need features such as subgenres and audio features, as I believe those are likely already taken into account by lastfm in their recommendations to some extent. However, if needed, someone made an Exportify CLI (I have yet to try it) that may be useful here. It's just that as far as I'm concerned, I don't think it would do me any good to have those features if I cannot get those features for the similar artists. Also, Exportify yields song-level data.
+2. Generate relevant features using Spotify API.
+   * These (remember, artist-level) features would be things like: 
+     * popularity (not sure how this is computed; I wonder if it would be better estimated via the total number of streams, although that would require more API requests and slow down the pipeline; lastfm has artist total playcounts that I can use instead)
+     * number of releases
+     * year of first release
+     * year of last release
+     * number of albums
+     * number of tracks
+     * number of times they show up in playlist (as primary artist or as a feature)
+     * artist picture (for UI visualization purposes but obviously not a feature)
+3. Generate relevant features using Lastfm API.
+   * From `artist.getInfo` endpoint - things like: 
+     * total listeners
+     * total playcount
+     * number of MY streams 
+     * tags (genre tags; may or may not use; if I do use though, would need some way of filtering out irrelevant tags)
+     * description/summary: for visualization purposes but also allows me to mine for nationality (+ record label, history, etc.) using some NLP technique if I'd like to use it as a feature or visualization tag
+     * on tour: lastfm has a binary `ontour` label for each artist, although I think I want more detailed tour info, e.g., starting tour soon. 
+4. Grab similar artists using Lastfm API.
+   * In the final UI, I want to be able to toggle how many ripples outwards to go. Start with just one though; that would also be the ripple that contains the most immediate artists I should look into as they are deemed most similar to the ones I already like.
+5. Grab touring data from external API - Songkick or Bandsintown.
+6. Compute similarity/prioritization score using features and weights (GNN implementation).
+   * Make sure that similar artists who are already in the playlist are not considered in the score. Or actually, would it make sense to weigh similar artists of those artists more heavily? That might make more sense actually.
+   * Take into account the features listed in steps 2 and 3. Compute specific weights accordingly (proportion of artist songs in playlist, e.g.)
+   * Generate rankings (top 5 or 10 highest similarity scorers)
+7. Build UI. 
+   * I want to have a means of visualizing the knowledge graph. I want to be able to select a node (an artist) and see their profile (basic info, their image, some of their general features)
+   * I want the recommendations to have explainability - what features contributed to their being recommended?
+   * Filtering options: 
+      * Number of similar artist ripples outward
+      * Minimum number of tracks an artist has in the playlist in order to be considered
+      * Minimum number of my streams on that artist (^)
+      * Which features to consider in the recommendations
+    * I also want the ability to just directly select artists (2 or more) to generate the knowledge graph and recommendations for.
+    * I would prefer not to use streamlit; I'm a bit tired of it and would prefer some novelty. I'm also not sure what frameworks even allow for visualization of knowledge graphs. I presume the KG can be produced in Plotly.
+      * [Gradio](https://www.gradio.app/)
+      * I want something similar to [this](https://huggingface.co/spaces/emilyalsentzer/SHEPHERD)
+8. **Grab social media data; further prioritize artists commonly mentioned or recommended by social media accounts. This is a difficult thing to figure out and I will try it after I've finished everything else.
+
 ### Project Scoping (Jul. 7, 2025)
 Obviously it is not feasible for me to store features for every artist on the platform, which is why I should start with a subset of related artists for each playlist artist. Music platforms already leverage fancy and complex algorithms (e.g. collaborative filtering) to recommend artists; there is no way I can do *better* than that with my resources, and so the only way from there is to leverage it and to improve upon it, and to fine-tune it for myself. Spotify has recently deprecated several API endpoints, including the similar artists one, and so in order to try and leverage pre-existing structures for artist recommendations, I will need to find some external resource. Once I can find a resource that allows me to obtain similar/related artists for a given subset of artists, it would just become a task of consolidating and prioritizing those related artists based on my relationship with the starter artists, as well as external data (social media, tour, etc.).
 
