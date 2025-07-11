@@ -8,6 +8,20 @@ I aim for this to be a musical artist recommender - it will output a list or ran
 * General artist properties - number of albums/songs, year of first release, band makeup, etc.
 * (Tentative, but I'd like to try and take into account upcoming tours and new music, as well as social media presence and connections to other bands)
 
+### Action Items (Jul. 10, 2025)
+* Re-organize the current pipeline - it's a bit of a mess. 
+  * Add documentation and types.
+  * Determine the exact input and output of each function. Band name lowercasing and punctuation stripping is really confusing.
+  * Investigate the workings of the cache. 
+    * Might need to restructure some of the data being written to the cache, primarily the events data, because the vast amount of information pulled (incl. random unneccessary links) will cause issues if the JSON file gets too big.
+* Parallelize API calls. Understand how they work.
+* Think about what other data sources to pull information from. 
+  * Remember that a big initial goal was to try and somehow integrate social media data (or in general, just more social aspects of the artist/music universe). I wonder if linking artists together by their record label would be somewhat of a proxy for that.
+* Think about any additional features to use. 
+  * Nationality feels a bit wrong to use, but if I did want to use it, I think I might need to do some NLP on the band summary. Don't know if there is a resource where I can directly pull their nationality, but lastfm summaries almost always state where the band is from. Same thing for band formation year, although maybe the time of first album release is a good enough proxy for that (or not, as oftentimes bands start with EPs. Come to think of it, I'm not sure why I didn't include EPs in the album/track count).
+    * Annoyingly, there is no direct way to grab an artist's EPs via the Spotify API; all EPs are returned if you look for singles, but I cannot find anything from the API response that distinguishes between a single and an EP.
+* With the current features, try and put everything together to create a basic preliminary visualization. Might help me think of things to add.
+
 ### Rough Outline (Jul. 7, 2025)
 1. Grab playlist data from Spotify API.
    * The information available from the Spotify API should be enough. Features such as the number of releases, popularity, etc.
