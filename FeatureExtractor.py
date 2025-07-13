@@ -7,6 +7,7 @@ import requests
 import os
 import string
 import matplotlib.pyplot as plt
+from typing import List, Dict
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from collections import Counter
@@ -66,22 +67,9 @@ class FeatureExtractor:
         
         return {}
 
-    def _get_playlist_artists(self): 
+    def _get_playlist_artists(self) -> List[Dict]: 
 
-        """Returns information for each unique artist in the provided playlist.
-        
-           e.g., for Sleep Token: 
-           {'external_urls': {'spotify': 'https://open.spotify.com/artist/2n2RSaZqBuUUukhbLlpnE6'},
-            'followers': {'href': None, 'total': 2512594},
-            'genres': ['progressive metal', 'metalcore'],
-            'href': 'https://api.spotify.com/v1/artists/2n2RSaZqBuUUukhbLlpnE6',
-            'id': '2n2RSaZqBuUUukhbLlpnE6',
-            'images': [...],
-            'name': 'Sleep Token',
-            'popularity': 85,
-            'type': 'artist',
-            'uri': 'spotify:artist:2n2RSaZqBuUUukhbLlpnE6',
-            'playlist_count': 36}"""    
+        """Retrieves artist-level data for each unique artist in the provided playlist."""    
 
         response = self.SPOTIFY.playlist_tracks(self.playlist_url, offset=0)
         # each artist involved in a song with features is considered individually
@@ -129,10 +117,10 @@ class FeatureExtractor:
         print(f"_get_playlist_artists: information retrieved for {len(artist_identifiers)} artists.")
         return all_artist_info
     
-    def _get_spotify_artist_by_search(self, artist_names):
+    def _get_spotify_artist_by_search(self, artist_names: List[str]) -> List[Dict]:
 
-        """Returns artist information for a given artist name. To be called for artists 
-           NOT present in the starter playlist."""
+        """Retrieves artist-level features for a list of provided artist names using
+           Spotify's search function. For each query, the first match is returned."""
 
         # load artist from cache if they are already recorded
         # goes by lowercase name
@@ -402,9 +390,19 @@ class FeatureExtractor:
         # TODO: note that both coperformer sets will include the original artist
         return tour_status, tour_date, set(tour_coperformers), Counter(festival_coperformers)
     
-    def _get_similar_artists(self, artist_names):
+    def _get_similar_artists(self, artist_names: List[str]) -> Dict[str, List[tuple]]:
 
-        """Returns similar artists to a given artist, alongside similarity score (from Lastfm)"""
+        """Retreives for each artist a list of the top ten similar artists (artist_name, similarity_score)
+           from Lastfm. 
+           
+           Notes:
+           - Spotify has deprecated its similar artists endpoint; otherwise, I would use that primarily.
+           - I am making the assumption that Lastfm is already taking into account features such as 
+             shared genres, listeners (collaborative filtering of some form), and tags. My intention is 
+             to build upon that.
+           - Some artists, strangely, yield no similar artists via API call, even if they do have similar
+             artists if I search manually on the website. Spelling mistakes are not the issue.
+           """
 
         lastfm_cache = self._load_cache("lastfm_similar_cache.json")
 
@@ -420,7 +418,8 @@ class FeatureExtractor:
             try: 
                 response = requests.get(url).json().get("similarartists", {}).get("artist", [])
                 # tuples of (artist, similarity score)
-                similar_artists = [(artist["name"].lower().strip(string.punctuation), artist["match"]) for artist in response]
+                # similar_artists = [(artist["name"].lower().strip(string.punctuation), artist["match"]) for artist in response]
+                similar_artists = [(artist["name"], artist["match"]) for artist in response]
                 lastfm_cache[cache_key] = {"data": similar_artists, "timestamp": datetime.now().timestamp()}
                 return similar_artists
             except Exception as e: 
