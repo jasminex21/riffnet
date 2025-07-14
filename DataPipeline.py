@@ -35,6 +35,8 @@ class FeatureExtractor:
         self.cache_expiry = timedelta(days=7)
 
         self.features_filename = features_filename
+        # to store artists who are missing data
+        self.failed = []
 
     # TODO
     def _save_cache(self, cache, cache_file):
@@ -129,6 +131,7 @@ class FeatureExtractor:
                 artist_dict["last_album_date"] = None
                 artist_dict["first_album_date"] = None
                 spotify_cache[cache_key] = {"data": artist_dict, "timestamp": datetime.now().timestamp()}
+                self.failed.append(artist_name)
                 return artist_dict
             
         all_artist_info = []
@@ -184,6 +187,7 @@ class FeatureExtractor:
             
             except Exception as e:
                 print(f"_get_playlist_artists: Error for URI {uri}: {e}")
+                self.failed.append(name)
                 return None
 
         for (name, uri) in artist_identifiers: 
@@ -222,6 +226,7 @@ class FeatureExtractor:
             except Exception as e: 
                 
                 print(f"_get_spotify_artist_by_search: no artist found for query {artist_name}; error {e}.")
+                self.failed.append(artist_name)
                 return {"name": cache_key, "uri": "", "genres": [], 
                         "popularity": 0, "followers": {"total": 0}, "playlist_count": 0}
         
@@ -269,6 +274,7 @@ class FeatureExtractor:
                                "lastfm_tags": [], 
                                "summary": ""}
                 lastfm_cache[cache_key] = {"data": artist_info, "timestamp": datetime.now().timestamp()}
+                self.failed.append(artist_name.lower())
                 return artist_info
         
         artists_info = []
@@ -317,6 +323,7 @@ class FeatureExtractor:
             except Exception as e: 
                 print(f"_get_similar_artists: Error fetching similar artists for artist {artist_name}: {e}")
                 lastfm_cache[cache_key] = {"data": [], "timestamp": datetime.now().timestamp()}
+                self.failed.append(artist_name)
                 return []
 
         similar_artists = {}
@@ -498,9 +505,12 @@ class FeatureExtractor:
         similar_artists = self._get_similar_artists(playlist_artist_names)
 
         # new artists linked to playlist artists
-        all_artists = set([tup[0] for artist, tuples in similar_artists.items() for tup in tuples] + 
-                          [co for coperformers in playlist_tour_data for co in coperformers["tour_coperformers"]] + 
-                          [co for coperformers in playlist_tour_data for co in coperformers["festival_coperformers"]])
+        all_artists = set([tup[0].lower() for artist, tuples in similar_artists.items() 
+                           for tup in tuples] + 
+                          [co.lower() for coperformers in playlist_tour_data 
+                           for co in coperformers["tour_coperformers"]] + 
+                          [co.lower() for coperformers in playlist_tour_data 
+                           for co in coperformers["festival_coperformers"]])
         # remove festival names - some were accidentally included despite my filtering
         festival_names = ["aftershock", "louder than life", "rock fest", "rockville", "welcome to rockville", 
                     "lollapalooza", "sonic temple", "mayhem festival", "coachella", "bonnaroo"]
@@ -523,13 +533,61 @@ class FeatureExtractor:
                                                                                     how="left", on="name")
         nonplaylist_all_features = nonplaylist_all_features.merge(pd.DataFrame(nonplaylist_tour_data), 
                                                                   how="left", on="name")
+        # TODO: only add to relations if present in all features
+        # TODO: there is still some issue w lowercasing - as seen in viz.
+        # artist relations
+            # lastfm similarity
+        print(f"get_all_artist_features: FAILED list: {self.failed}")
+        relations = []
+        for origin, similar_ls in similar_artists.items(): 
+
+            for (similar_artist, sim_score) in similar_ls: 
+
+                if (similar_artist not in self.failed) and (origin not in self.failed):
+
+                    relations.append({
+                        "origin": origin, 
+                        "target": similar_artist, 
+                        "type": "similarity",
+                        "weight": float(sim_score)})
+        # coperformers
+        for coperformer_dict in playlist_tour_data:
+
+            origin = coperformer_dict["name"]
+            tour_coperformers = coperformer_dict["tour_coperformers"]
+            festival_coperformers = coperformer_dict["festival_coperformers"]
+
+            for tour_co in tour_coperformers: 
+
+                if (tour_co not in self.failed) and (origin not in self.failed): 
+                
+                    relations.append({
+                        "origin": origin,
+                        "target": tour_co, 
+                        "type": "tour",
+                        "weight": 1.0
+                    })
+            for festival_co, cnt in festival_coperformers.items():
+
+                if (festival_co not in self.failed) and (origin not in self.failed): 
+                    relations.append({
+                        "origin": origin, 
+                        "target": festival_co,
+                        "type": "festival", 
+                        "weight": cnt
+                    })
         
+        with open("artist_relationships.json", "w") as f:
+            json.dump(relations, f, indent=2)
+
+        print(f"get_all_artist_features: {len(relations)} artist relationships saved to artist_relationships.json.")
+
         ALL_FEATURES = pd.concat([playlist_all_features, nonplaylist_all_features])
         ALL_FEATURES = ALL_FEATURES.drop_duplicates(subset=["name"])
         
         ALL_FEATURES.to_csv(self.features_filename, index=False)
 
-        print(f"All features written to {self.features_filename}.")
+        print(f"get_all_artist_features: All features written to {self.features_filename}.")
         return ALL_FEATURES
 
 if __name__ == "__main__":

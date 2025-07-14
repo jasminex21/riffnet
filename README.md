@@ -8,6 +8,20 @@ I aim for this to be a musical artist recommender - it will output a list or ran
 * General artist properties - number of albums/songs, year of first release, band makeup, etc.
 * (Tentative, but I'd like to try and take into account upcoming tours and new music, as well as social media presence and connections to other bands)
 
+### Artist Relationship (Jul. 13, 2025)
+* I have completed the logic of the feature-pulling pipeline. I do still need to implement parallel processing, but I'd like to figure out how to store artist-artist relationships first.
+* Structure: 
+  
+  ```json
+  [
+  {"source": "spiritbox", "target": "bad omens", "type": "similarity", "weight": 0.85},
+  {"source": "spiritbox", "target": "periphery", "type": "tour", "weight": 1.0, "event_date": "2025-08-15"},
+  {"source": "hatebreed", "target": "dayseeker", "type": "festival", "weight": 2, "event_name": "louder than life"}
+  ]
+  ```
+
+  * Note that `source`, `target`, and `type` are mandatory; `weight` indicates the strength of the relationship, and all other keys are optional features associated with the connection, e.g., `event_name`.
+
 ### Action Items (Jul. 10, 2025)
 * Re-organize the current pipeline - it's a bit of a mess. 
   * Add documentation and types.
