@@ -4,6 +4,7 @@ import json
 import spotipy
 import re
 import requests
+import time
 import os
 import string
 import traceback
@@ -11,15 +12,16 @@ import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from collections import Counter
+from threading import Lock
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from spotipy.oauth2 import SpotifyClientCredentials
-from typing import List #, Dict
+from typing import List 
 
 class FeatureExtractor: 
 
-    def __init__(self, spotify_client_id, spotify_client_secret, 
-                 playlist_url, lastfm_api_key, lastfm_username, 
-                 discovery_api_key, features_filename):
+    def __init__(self, spotify_client_id: str, spotify_client_secret: str, 
+                 playlist_url: str, lastfm_api_key: str, lastfm_username: str, 
+                 discovery_api_key: str, features_filename: str):
         
         auth_manager = SpotifyClientCredentials(client_id=spotify_client_id,
                                                 client_secret=spotify_client_secret)
@@ -33,10 +35,9 @@ class FeatureExtractor:
         self.cache_dir = "cache"
         os.makedirs(self.cache_dir, exist_ok=True)
         self.cache_expiry = timedelta(days=7)
+        self.cache_lock = Lock()
 
         self.features_filename = features_filename
-        # to store artists who are missing data
-        self.failed = []
 
     # TODO
     def _save_cache(self, cache, cache_file):
@@ -73,7 +74,7 @@ class FeatureExtractor:
 
         for artist_dict in artist_dicts: 
 
-            features.append({"name": artist_dict.get("name", "").lower().strip(string.punctuation),
+            features.append({"name": artist_dict.get("name", "").lower(),
                              "uri": artist_dict.get("uri", ""),
                              "genres": artist_dict.get("genres", []),
                              "albums": artist_dict.get("albums", 0),
@@ -110,6 +111,7 @@ class FeatureExtractor:
                 return spotify_cache[cache_key]["data"]
             
             try: 
+                time.sleep(0.2)
                 # album info
                 albums = self.SPOTIFY.artist_albums(uri, include_groups="album") if uri else {"total": 0, "items": []}
                 # number of albums
@@ -121,7 +123,10 @@ class FeatureExtractor:
                 artist_dict["tracks"] = sum(album["total_tracks"] for album in album_items)
                 artist_dict["last_album_date"] = album_items[0]["release_date"] if album_items else None
                 artist_dict["first_album_date"] = album_items[-1]["release_date"] if album_items else None
-                spotify_cache[cache_key] = {"data": artist_dict, "timestamp": datetime.now().timestamp()}
+                
+                with self.cache_lock:
+                    spotify_cache[cache_key] = {"data": artist_dict, "timestamp": datetime.now().timestamp()}
+                
                 return artist_dict
 
             except Exception as e:
@@ -130,13 +135,22 @@ class FeatureExtractor:
                 artist_dict["tracks"] = 0
                 artist_dict["last_album_date"] = None
                 artist_dict["first_album_date"] = None
-                spotify_cache[cache_key] = {"data": artist_dict, "timestamp": datetime.now().timestamp()}
-                self.failed.append(artist_name)
+
+                with self.cache_lock: 
+                    spotify_cache[cache_key] = {"data": artist_dict, "timestamp": datetime.now().timestamp()}
+                
                 return artist_dict
             
         all_artist_info = []
-        for artist_dict in artist_dicts: 
-            all_artist_info.append(fetch_discog(artist_dict))
+        # for artist_dict in artist_dicts: 
+        #     all_artist_info.append(fetch_discog(artist_dict))
+
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            future_to_artist = {executor.submit(fetch_discog, artist_dict): artist_dict for artist_dict in artist_dicts}
+            for future in as_completed(future_to_artist):
+                result = future.result()
+                if result:
+                    all_artist_info.append(result)
 
         self._save_cache(spotify_cache, "spotify_discog_cache.json")
         print(f"_generate_discog_features: discography features generated for {len(all_artist_info)} artists.")
@@ -148,24 +162,25 @@ class FeatureExtractor:
            playlist."""    
 
         # grab tracks in playlist
+        time.sleep(0.2)
         response = self.SPOTIFY.playlist_tracks(self.playlist_url, offset=0)
-        # each artist involved in a song with features is considered individually
-        # might be a better idea to only consider primary artists...we will see
-        artists = [artist_dict for track in response["items"] 
-                   for artist_dict in track["track"]["artists"]]
+        # considering only the primary artist of each track
+        artists = [track["track"]["artists"][0] for track in response["items"]]
+        # artists = [artist_dict for track in response["items"] 
+        #            for artist_dict in track["track"]["artists"]]
         # total number of tracks on playlist - needed to determine the number 
         # of loops (max tracks per req. is 100)
         total = response["total"]
 
         # for larger playlists, multiple requests need to be made to fetch all tracks
         for offset in range(100, total + 1, 100): 
-
             response = self.SPOTIFY.playlist_tracks(self.playlist_url, offset=offset)
-            artists += [artist_dict for track in response["items"] 
-                        for artist_dict in track["track"]["artists"]]
+            artists += [track["track"]["artists"][0] for track in response["items"]]
+            # artists += [artist_dict for track in response["items"] 
+            #             for artist_dict in track["track"]["artists"]]
         
         # set of unique names and URIs
-        artist_identifiers = set([(artist["name"].lower().strip(string.punctuation), 
+        artist_identifiers = set([(artist["name"].lower(), 
                                    artist["uri"]) for artist in artists])
         all_artist_info = []
 
@@ -181,17 +196,23 @@ class FeatureExtractor:
                 artist_info = self.SPOTIFY.artist(uri)
                 artist_count = sum(1 for artist_dict in artists if artist_dict["uri"] == uri)
                 artist_info["playlist_count"] = artist_count
-                spotify_cache[name.lower().strip(string.punctuation)] = {"data": artist_info, "timestamp": datetime.now().timestamp()}
+                spotify_cache[name.lower()] = {"data": artist_info, "timestamp": datetime.now().timestamp()}
 
                 return artist_info
             
             except Exception as e:
                 print(f"_get_playlist_artists: Error for URI {uri}: {e}")
-                self.failed.append(name)
                 return None
 
-        for (name, uri) in artist_identifiers: 
-            all_artist_info.append(fetch_artist(uri, name))
+        # for (name, uri) in artist_identifiers: 
+        #     all_artist_info.append(fetch_artist(uri, name))
+
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            future_to_artist = {executor.submit(fetch_artist, uri, name): (name, uri) for (name, uri) in artist_identifiers}
+            for future in as_completed(future_to_artist):
+                result = future.result()
+                if result:
+                    all_artist_info.append(result)
 
         self._save_cache(spotify_cache, "spotify_artist_cache.json")
         print(f"_get_playlist_artists: information retrieved for {len(artist_identifiers)} artists.")
@@ -215,6 +236,7 @@ class FeatureExtractor:
                 return spotify_cache[cache_key]["data"]
 
             try: 
+                time.sleep(0.2)
                 artist_info = self.SPOTIFY.search(q=artist_name, 
                                                   type="artist").get("artists", {}).get("items", [])[0]
                 
@@ -226,14 +248,21 @@ class FeatureExtractor:
             except Exception as e: 
                 
                 print(f"_get_spotify_artist_by_search: no artist found for query {artist_name}; error {e}.")
-                self.failed.append(artist_name)
                 return {"name": cache_key, "uri": "", "genres": [], 
                         "popularity": 0, "followers": {"total": 0}, "playlist_count": 0}
         
         searched_artists = []
-        for artist_name in artist_names:
+
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            future_to_artist = {executor.submit(fetch_search, name): name for name in artist_names if name}
+            for future in as_completed(future_to_artist):
+                result = future.result()
+                if result:
+                    searched_artists.append(result)
+
+        # for artist_name in artist_names:
            
-            searched_artists.append(fetch_search(artist_name))
+        #     searched_artists.append(fetch_search(artist_name))
         
         self._save_cache(spotify_cache, "spotify_artist_cache.json")
         
@@ -256,7 +285,7 @@ class FeatureExtractor:
 
             try: 
                 response = requests.get(url).json()["artist"]
-                artist_info = {"name": artist_name.lower().strip(string.punctuation),
+                artist_info = {"name": artist_name.lower(),
                                "lastfm_listeners": response.get("stats", {}).get("listeners", 0),
                                "lastfm_playcount": response.get("stats", {}).get("playcount", 0),
                                "personal_playcount": response.get("stats", {}).get("userplaycount", 0),
@@ -267,20 +296,26 @@ class FeatureExtractor:
 
             except Exception as e: 
                 print(f"Artist {artist_name} not found on lastfm.")
-                artist_info = {"name": artist_name.lower().strip(string.punctuation), 
+                artist_info = {"name": artist_name.lower(), 
                                "lastfm_listeners": 0, 
                                "lastfm_playcount": 0, 
                                "personal_playcount": 0, 
                                "lastfm_tags": [], 
                                "summary": ""}
                 lastfm_cache[cache_key] = {"data": artist_info, "timestamp": datetime.now().timestamp()}
-                self.failed.append(artist_name.lower())
                 return artist_info
         
         artists_info = []
         
-        for artist_name in artist_names: 
-            artists_info.append(fetch_lastfm(artist_name))
+        # for artist_name in artist_names: 
+        #     artists_info.append(fetch_lastfm(artist_name))
+
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            future_to_artist = {executor.submit(fetch_lastfm, name): name for name in artist_names}
+            for future in as_completed(future_to_artist):
+                result = future.result()
+                if result:
+                    artists_info.append(result)
 
         self._save_cache(lastfm_cache, "lastfm_cache.json")
 
@@ -309,26 +344,33 @@ class FeatureExtractor:
             if cache_key in lastfm_cache: 
                 return lastfm_cache[cache_key]["data"]
             
-            artist_name_formatted = "+".join(artist_name.split()).lower().strip(string.punctuation)
-            url = f"https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={artist_name_formatted}&api_key={self.lastfm_api_key}&format=json&limit=10"
+            artist_name_formatted = "+".join(artist_name.split()).lower()
+            # set limit if needed
+            url = f"https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={artist_name_formatted}&api_key={self.lastfm_api_key}&format=json"
 
             try: 
                 response = requests.get(url).json().get("similarartists", {}).get("artist", [])
                 # tuples of (artist, similarity score)
-                # similar_artists = [(artist["name"].lower().strip(string.punctuation), artist["match"]) for artist in response]
-                similar_artists = [(artist["name"], artist["match"]) for artist in response]
+                similar_artists = [(artist["name"].lower(), artist["match"]) for artist in response]
                 lastfm_cache[cache_key] = {"data": similar_artists, "timestamp": datetime.now().timestamp()}
                 return similar_artists
             
             except Exception as e: 
                 print(f"_get_similar_artists: Error fetching similar artists for artist {artist_name}: {e}")
                 lastfm_cache[cache_key] = {"data": [], "timestamp": datetime.now().timestamp()}
-                self.failed.append(artist_name)
                 return []
 
         similar_artists = {}
-        for artist_name in artist_names: 
-            similar_artists[artist_name] = fetch_similar(artist_name)
+        # for artist_name in artist_names: 
+        #     similar_artists[artist_name] = fetch_similar(artist_name)
+
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            for name in artist_names:
+                future_to_artist = {executor.submit(fetch_similar, name)}
+                for future in as_completed(future_to_artist):
+                    result = future.result()
+                    if result:
+                        similar_artists[name] = result
         
         self._save_cache(lastfm_cache, "lastfm_similar_cache.json")
         print(f"Similar artists retrieved for {len(similar_artists)} artists.")
@@ -349,8 +391,7 @@ class FeatureExtractor:
             if cache_key in ticketmaster_cache: 
                 return ticketmaster_cache[cache_key]["data"]
             
-            # TODO: not sure if punctuation strip is necessary
-            artist_name_formatted = "+".join(artist_name.split()).lower().strip(string.punctuation)
+            artist_name_formatted = "+".join(artist_name.split()).lower()
             url = f"https://app.ticketmaster.com/discovery/v2/events.json?apikey={self.discovery_api_key}&classificationName=music&keyword={artist_name_formatted}&sort=date,name,asc&size=20"
             
             try: 
@@ -362,13 +403,13 @@ class FeatureExtractor:
                     "dates": event.get("dates", {}),
                     "classifications": event.get("classifications", []),
                     "attractions": [
-                        {"name": attr.get("name", "").lower().strip(string.punctuation), 
+                        {"name": attr.get("name", "").lower(), 
                          "type": attr.get("type", "")}
                         for attr in event.get("_embedded", {}).get("attractions", [])
                         if attr.get("type", "") == "attraction" and attr.get("name") != None
                     ]
                 } for event in events
-                if artist_name.lower().strip(string.punctuation) in [attr.get("name", "").lower().strip(string.punctuation)
+                if artist_name.lower() in [attr.get("name", "").lower()
                                    for attr in event.get("_embedded", {}).get("attractions", [])]]
                 
                 # group events with the same name together to avoid iterating repetitively
@@ -389,8 +430,16 @@ class FeatureExtractor:
                 return {}
         
         artist_events = {}
-        for artist_name in artist_names: 
-            artist_events[artist_name.lower().strip(string.punctuation)] = fetch_events(artist_name)
+        # for artist_name in artist_names: 
+        #     artist_events[artist_name.lower()] = fetch_events(artist_name)
+
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            for name in artist_names:
+                future_to_artist = {executor.submit(fetch_events, name)}
+                for future in as_completed(future_to_artist):
+                    result = future.result()
+                    if result:
+                        artist_events[name.lower()] = result
 
         print(f"_get_artist_events: Events fetched for {len(artist_events)} artists.")
         self._save_cache(ticketmaster_cache, "ticketmaster_cache.json")
@@ -445,8 +494,6 @@ class FeatureExtractor:
                 event_is_tour = self.__is_tour(event)
 
                 if get_coperformers: 
-                    # TODO: lower and strip?
-                    # TODO: check is tour to remove venues and festival names from attractions?
                     event_attractions = [attr["name"].lower() for attr in event.get("attractions", [])]
 
                     if artist_name.lower() not in event_attractions: 
@@ -470,12 +517,12 @@ class FeatureExtractor:
                     tour_status = "on_tour"
 
             # remove the artist from their own coperformer groups
-            tour_coperformers = set(tour_coperformers) - set([artist_name.lower().strip(string.punctuation)])
+            tour_coperformers = set(tour_coperformers) - set([artist_name.lower()])
             festival_coperformers = Counter(festival_coperformers)
-            festival_coperformers.pop(artist_name.lower().strip(string.punctuation), None)
+            festival_coperformers.pop(artist_name.lower(), None)
 
             artist_tour_data = {
-                "name": artist_name.lower().strip(string.punctuation),
+                "name": artist_name.lower(),
                 "tour_status": tour_status,
                 "tour_date": tour_date,
                 "tour_coperformers": tour_coperformers,
@@ -537,19 +584,16 @@ class FeatureExtractor:
         # TODO: there is still some issue w lowercasing - as seen in viz.
         # artist relations
             # lastfm similarity
-        print(f"get_all_artist_features: FAILED list: {self.failed}")
         relations = []
         for origin, similar_ls in similar_artists.items(): 
 
             for (similar_artist, sim_score) in similar_ls: 
 
-                if (similar_artist not in self.failed) and (origin not in self.failed):
-
-                    relations.append({
-                        "origin": origin, 
-                        "target": similar_artist, 
-                        "type": "similarity",
-                        "weight": float(sim_score)})
+                relations.append({
+                    "origin": origin, 
+                    "target": similar_artist, 
+                    "type": "similarity",
+                    "weight": float(sim_score)})
         # coperformers
         for coperformer_dict in playlist_tour_data:
 
@@ -558,24 +602,21 @@ class FeatureExtractor:
             festival_coperformers = coperformer_dict["festival_coperformers"]
 
             for tour_co in tour_coperformers: 
-
-                if (tour_co not in self.failed) and (origin not in self.failed): 
                 
-                    relations.append({
-                        "origin": origin,
-                        "target": tour_co, 
-                        "type": "tour",
-                        "weight": 1.0
-                    })
+                relations.append({
+                    "origin": origin,
+                    "target": tour_co, 
+                    "type": "tour",
+                    "weight": 1.0
+                })
             for festival_co, cnt in festival_coperformers.items():
 
-                if (festival_co not in self.failed) and (origin not in self.failed): 
-                    relations.append({
-                        "origin": origin, 
-                        "target": festival_co,
-                        "type": "festival", 
-                        "weight": cnt
-                    })
+                relations.append({
+                    "origin": origin, 
+                    "target": festival_co,
+                    "type": "festival", 
+                    "weight": cnt
+                })
         
         with open("artist_relationships.json", "w") as f:
             json.dump(relations, f, indent=2)
@@ -584,6 +625,7 @@ class FeatureExtractor:
 
         ALL_FEATURES = pd.concat([playlist_all_features, nonplaylist_all_features])
         ALL_FEATURES = ALL_FEATURES.drop_duplicates(subset=["name"])
+        ALL_FEATURES = ALL_FEATURES.dropna(subset=["name", "popularity", "albums", "lastfm_listeners", "tour_status"])
         
         ALL_FEATURES.to_csv(self.features_filename, index=False)
 
@@ -597,10 +639,10 @@ if __name__ == "__main__":
 
     extractor = FeatureExtractor(spotify_client_id=os.environ.get("SPOTIFY_CLIENT_ID"), 
                                  spotify_client_secret=os.environ.get("SPOTIFY_CLIENT_SECRET"), 
-                                 playlist_url="https://open.spotify.com/playlist/71r2QEy5TiCGplk0QYPUSC?si=3dc90be0b5e74143", 
+                                 playlist_url="https://open.spotify.com/playlist/142oZDOc1za2dkUwyonA1P?si=d00ef6f833e34213", 
                                  lastfm_api_key=os.environ.get("LASTFM_API_KEY"), 
                                  lastfm_username="jasminexx18", 
                                  discovery_api_key=os.environ.get("TM_API_KEY"), 
-                                 features_filename="ALL_FEATURES_1010.csv")
+                                 features_filename="ALL_FEATURES_HARDNHEAVY.csv")
     
     all_features = extractor.get_all_artist_features()

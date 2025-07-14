@@ -1,0 +1,4862 @@
+[
+  {
+    "origin": "thornhill",
+    "target": "invent animate",
+    "type": "similarity",
+    "weight": 1.0
+  },
+  {
+    "origin": "thornhill",
+    "target": "northlane",
+    "type": "similarity",
+    "weight": 0.977366
+  },
+  {
+    "origin": "thornhill",
+    "target": "silent planet",
+    "type": "similarity",
+    "weight": 0.925026
+  },
+  {
+    "origin": "thornhill",
+    "target": "loathe",
+    "type": "similarity",
+    "weight": 0.82129
+  },
+  {
+    "origin": "thornhill",
+    "target": "void of vision",
+    "type": "similarity",
+    "weight": 0.79411
+  },
+  {
+    "origin": "thornhill",
+    "target": "erra",
+    "type": "similarity",
+    "weight": 0.670626
+  },
+  {
+    "origin": "thornhill",
+    "target": "allt",
+    "type": "similarity",
+    "weight": 0.644494
+  },
+  {
+    "origin": "thornhill",
+    "target": "currents",
+    "type": "similarity",
+    "weight": 0.620443
+  },
+  {
+    "origin": "thornhill",
+    "target": "moodring",
+    "type": "similarity",
+    "weight": 0.601588
+  },
+  {
+    "origin": "thornhill",
+    "target": "polaris",
+    "type": "similarity",
+    "weight": 0.59638
+  },
+  {
+    "origin": "thornhill",
+    "target": "static dress",
+    "type": "similarity",
+    "weight": 0.587223
+  },
+  {
+    "origin": "thornhill",
+    "target": "love is noise",
+    "type": "similarity",
+    "weight": 0.587068
+  },
+  {
+    "origin": "thornhill",
+    "target": "spiritbox",
+    "type": "similarity",
+    "weight": 0.576411
+  },
+  {
+    "origin": "thornhill",
+    "target": "156/silence",
+    "type": "similarity",
+    "weight": 0.551836
+  },
+  {
+    "origin": "thornhill",
+    "target": "invent, animate",
+    "type": "similarity",
+    "weight": 0.536071
+  },
+  {
+    "origin": "thornhill",
+    "target": "banks arcade",
+    "type": "similarity",
+    "weight": 0.519807
+  },
+  {
+    "origin": "thornhill",
+    "target": "alpha wolf",
+    "type": "similarity",
+    "weight": 0.502861
+  },
+  {
+    "origin": "thornhill",
+    "target": "like moths to flames",
+    "type": "similarity",
+    "weight": 0.488644
+  },
+  {
+    "origin": "thornhill",
+    "target": "pridelands",
+    "type": "similarity",
+    "weight": 0.488393
+  },
+  {
+    "origin": "thornhill",
+    "target": "diamond construct",
+    "type": "similarity",
+    "weight": 0.485641
+  },
+  {
+    "origin": "thornhill",
+    "target": "aviana",
+    "type": "similarity",
+    "weight": 0.47891
+  },
+  {
+    "origin": "thornhill",
+    "target": "cane hill",
+    "type": "similarity",
+    "weight": 0.464385
+  },
+  {
+    "origin": "thornhill",
+    "target": "imminence",
+    "type": "similarity",
+    "weight": 0.458704
+  },
+  {
+    "origin": "thornhill",
+    "target": "windwaker",
+    "type": "similarity",
+    "weight": 0.454159
+  },
+  {
+    "origin": "thornhill",
+    "target": "greyhaven",
+    "type": "similarity",
+    "weight": 0.451222
+  },
+  {
+    "origin": "thornhill",
+    "target": "ocean grove",
+    "type": "similarity",
+    "weight": 0.44938
+  },
+  {
+    "origin": "thornhill",
+    "target": "kingdom of giants",
+    "type": "similarity",
+    "weight": 0.448689
+  },
+  {
+    "origin": "thornhill",
+    "target": "profiler",
+    "type": "similarity",
+    "weight": 0.443606
+  },
+  {
+    "origin": "thornhill",
+    "target": "novelists",
+    "type": "similarity",
+    "weight": 0.430902
+  },
+  {
+    "origin": "thornhill",
+    "target": "johnny booth",
+    "type": "similarity",
+    "weight": 0.428524
+  },
+  {
+    "origin": "thornhill",
+    "target": "architects",
+    "type": "similarity",
+    "weight": 0.42206
+  },
+  {
+    "origin": "thornhill",
+    "target": "landmvrks",
+    "type": "similarity",
+    "weight": 0.415396
+  },
+  {
+    "origin": "thornhill",
+    "target": "boundaries",
+    "type": "similarity",
+    "weight": 0.410968
+  },
+  {
+    "origin": "thornhill",
+    "target": "unprocessed",
+    "type": "similarity",
+    "weight": 0.410427
+  },
+  {
+    "origin": "thornhill",
+    "target": "the plot in you",
+    "type": "similarity",
+    "weight": 0.387151
+  },
+  {
+    "origin": "thornhill",
+    "target": "grayscale season",
+    "type": "similarity",
+    "weight": 0.386616
+  },
+  {
+    "origin": "thornhill",
+    "target": "resolve",
+    "type": "similarity",
+    "weight": 0.369983
+  },
+  {
+    "origin": "thornhill",
+    "target": "thrown",
+    "type": "similarity",
+    "weight": 0.367726
+  },
+  {
+    "origin": "thornhill",
+    "target": "avralize",
+    "type": "similarity",
+    "weight": 0.367667
+  },
+  {
+    "origin": "thornhill",
+    "target": "the callous daoboys",
+    "type": "similarity",
+    "weight": 0.361518
+  },
+  {
+    "origin": "thornhill",
+    "target": "sleep token",
+    "type": "similarity",
+    "weight": 0.3597
+  },
+  {
+    "origin": "thornhill",
+    "target": "half me",
+    "type": "similarity",
+    "weight": 0.357049
+  },
+  {
+    "origin": "thornhill",
+    "target": "above, below",
+    "type": "similarity",
+    "weight": 0.353134
+  },
+  {
+    "origin": "thornhill",
+    "target": "heavensgate",
+    "type": "similarity",
+    "weight": 0.353021
+  },
+  {
+    "origin": "thornhill",
+    "target": "the devil wears prada",
+    "type": "similarity",
+    "weight": 0.342991
+  },
+  {
+    "origin": "thornhill",
+    "target": "graphic nature",
+    "type": "similarity",
+    "weight": 0.335322
+  },
+  {
+    "origin": "thornhill",
+    "target": "in hearts wake",
+    "type": "similarity",
+    "weight": 0.329768
+  },
+  {
+    "origin": "thornhill",
+    "target": "bloom",
+    "type": "similarity",
+    "weight": 0.317591
+  },
+  {
+    "origin": "thornhill",
+    "target": "dayseeker",
+    "type": "similarity",
+    "weight": 0.316263
+  },
+  {
+    "origin": "thornhill",
+    "target": "memorist",
+    "type": "similarity",
+    "weight": 0.313947
+  },
+  {
+    "origin": "thornhill",
+    "target": "volumes",
+    "type": "similarity",
+    "weight": 0.31056
+  },
+  {
+    "origin": "thornhill",
+    "target": "counterparts",
+    "type": "similarity",
+    "weight": 0.305566
+  },
+  {
+    "origin": "thornhill",
+    "target": "hollow front",
+    "type": "similarity",
+    "weight": 0.296902
+  },
+  {
+    "origin": "thornhill",
+    "target": "alt.",
+    "type": "similarity",
+    "weight": 0.282266
+  },
+  {
+    "origin": "thornhill",
+    "target": "structures",
+    "type": "similarity",
+    "weight": 0.281764
+  },
+  {
+    "origin": "thornhill",
+    "target": "vianova",
+    "type": "similarity",
+    "weight": 0.276445
+  },
+  {
+    "origin": "thornhill",
+    "target": "ten56.",
+    "type": "similarity",
+    "weight": 0.276246
+  },
+  {
+    "origin": "thornhill",
+    "target": "oceans ate alaska",
+    "type": "similarity",
+    "weight": 0.262055
+  },
+  {
+    "origin": "thornhill",
+    "target": "dying wish",
+    "type": "similarity",
+    "weight": 0.257484
+  },
+  {
+    "origin": "thornhill",
+    "target": "dealer",
+    "type": "similarity",
+    "weight": 0.249354
+  },
+  {
+    "origin": "thornhill",
+    "target": "fit for a king",
+    "type": "similarity",
+    "weight": 0.246695
+  },
+  {
+    "origin": "thornhill",
+    "target": "president",
+    "type": "similarity",
+    "weight": 0.246456
+  },
+  {
+    "origin": "thornhill",
+    "target": "reflections",
+    "type": "similarity",
+    "weight": 0.24556
+  },
+  {
+    "origin": "thornhill",
+    "target": "god complex",
+    "type": "similarity",
+    "weight": 0.244779
+  },
+  {
+    "origin": "thornhill",
+    "target": "veil of maya",
+    "type": "similarity",
+    "weight": 0.244649
+  },
+  {
+    "origin": "thornhill",
+    "target": "bury tomorrow",
+    "type": "similarity",
+    "weight": 0.242578
+  },
+  {
+    "origin": "thornhill",
+    "target": "sentinels",
+    "type": "similarity",
+    "weight": 0.239383
+  },
+  {
+    "origin": "thornhill",
+    "target": "while she sleeps",
+    "type": "similarity",
+    "weight": 0.238301
+  },
+  {
+    "origin": "thornhill",
+    "target": "foreign hands",
+    "type": "similarity",
+    "weight": 0.237052
+  },
+  {
+    "origin": "thornhill",
+    "target": "breakk.away",
+    "type": "similarity",
+    "weight": 0.235334
+  },
+  {
+    "origin": "thornhill",
+    "target": "bad omens",
+    "type": "similarity",
+    "weight": 0.233115
+  },
+  {
+    "origin": "thornhill",
+    "target": "bleed",
+    "type": "similarity",
+    "weight": 0.226501
+  },
+  {
+    "origin": "thornhill",
+    "target": "split chain",
+    "type": "similarity",
+    "weight": 0.22649
+  },
+  {
+    "origin": "thornhill",
+    "target": "wage war",
+    "type": "similarity",
+    "weight": 0.22455
+  },
+  {
+    "origin": "thornhill",
+    "target": "gore.",
+    "type": "similarity",
+    "weight": 0.22396
+  },
+  {
+    "origin": "thornhill",
+    "target": "gravemind",
+    "type": "similarity",
+    "weight": 0.220651
+  },
+  {
+    "origin": "thornhill",
+    "target": "defocus",
+    "type": "similarity",
+    "weight": 0.213357
+  },
+  {
+    "origin": "thornhill",
+    "target": "karnivool",
+    "type": "similarity",
+    "weight": 0.211938
+  },
+  {
+    "origin": "thornhill",
+    "target": "save us",
+    "type": "similarity",
+    "weight": 0.211503
+  },
+  {
+    "origin": "thornhill",
+    "target": "time, the valuator",
+    "type": "similarity",
+    "weight": 0.210965
+  },
+  {
+    "origin": "thornhill",
+    "target": "crystal lake",
+    "type": "similarity",
+    "weight": 0.207068
+  },
+  {
+    "origin": "thornhill",
+    "target": "vctms",
+    "type": "similarity",
+    "weight": 0.197421
+  },
+  {
+    "origin": "thornhill",
+    "target": "dreamwake",
+    "type": "similarity",
+    "weight": 0.196023
+  },
+  {
+    "origin": "thornhill",
+    "target": "my ticket home",
+    "type": "similarity",
+    "weight": 0.195143
+  },
+  {
+    "origin": "thornhill",
+    "target": "tropic gold",
+    "type": "similarity",
+    "weight": 0.194158
+  },
+  {
+    "origin": "thornhill",
+    "target": "the gloom in the corner",
+    "type": "similarity",
+    "weight": 0.193468
+  },
+  {
+    "origin": "thornhill",
+    "target": "varials",
+    "type": "similarity",
+    "weight": 0.192752
+  },
+  {
+    "origin": "thornhill",
+    "target": "end",
+    "type": "similarity",
+    "weight": 0.191418
+  },
+  {
+    "origin": "thornhill",
+    "target": "reliqa",
+    "type": "similarity",
+    "weight": 0.191408
+  },
+  {
+    "origin": "thornhill",
+    "target": "tallah",
+    "type": "similarity",
+    "weight": 0.19137
+  },
+  {
+    "origin": "thornhill",
+    "target": "after the burial",
+    "type": "similarity",
+    "weight": 0.190858
+  },
+  {
+    "origin": "thornhill",
+    "target": "the oklahoma kid",
+    "type": "similarity",
+    "weight": 0.181994
+  },
+  {
+    "origin": "thornhill",
+    "target": "knosis",
+    "type": "similarity",
+    "weight": 0.178439
+  },
+  {
+    "origin": "thornhill",
+    "target": "ocean sleeper",
+    "type": "similarity",
+    "weight": 0.1776
+  },
+  {
+    "origin": "thornhill",
+    "target": "abbie falls",
+    "type": "similarity",
+    "weight": 0.176244
+  },
+  {
+    "origin": "thornhill",
+    "target": "glass cloud",
+    "type": "similarity",
+    "weight": 0.175536
+  },
+  {
+    "origin": "thornhill",
+    "target": "knocked loose, poppy",
+    "type": "similarity",
+    "weight": 0.174927
+  },
+  {
+    "origin": "thornhill",
+    "target": "heriot",
+    "type": "similarity",
+    "weight": 0.174109
+  },
+  {
+    "origin": "thornhill",
+    "target": "amira elfeky",
+    "type": "similarity",
+    "weight": 0.172837
+  },
+  {
+    "origin": "thornhill",
+    "target": "senna",
+    "type": "similarity",
+    "weight": 0.172053
+  },
+  {
+    "origin": "bad omens",
+    "target": "bring me the horizon",
+    "type": "similarity",
+    "weight": 1.0
+  },
+  {
+    "origin": "bad omens",
+    "target": "the plot in you",
+    "type": "similarity",
+    "weight": 0.879721
+  },
+  {
+    "origin": "bad omens",
+    "target": "motionless in white",
+    "type": "similarity",
+    "weight": 0.849213
+  },
+  {
+    "origin": "bad omens",
+    "target": "dayseeker",
+    "type": "similarity",
+    "weight": 0.835329
+  },
+  {
+    "origin": "bad omens",
+    "target": "catch your breath",
+    "type": "similarity",
+    "weight": 0.831805
+  },
+  {
+    "origin": "bad omens",
+    "target": "sleep token",
+    "type": "similarity",
+    "weight": 0.813462
+  },
+  {
+    "origin": "bad omens",
+    "target": "bad omens, poppy",
+    "type": "similarity",
+    "weight": 0.694185
+  },
+  {
+    "origin": "bad omens",
+    "target": "spiritbox",
+    "type": "similarity",
+    "weight": 0.655372
+  },
+  {
+    "origin": "bad omens",
+    "target": "too close to touch",
+    "type": "similarity",
+    "weight": 0.647977
+  },
+  {
+    "origin": "bad omens",
+    "target": "caskets",
+    "type": "similarity",
+    "weight": 0.633999
+  },
+  {
+    "origin": "bad omens",
+    "target": "i prevail",
+    "type": "similarity",
+    "weight": 0.631864
+  },
+  {
+    "origin": "bad omens",
+    "target": "architects",
+    "type": "similarity",
+    "weight": 0.618132
+  },
+  {
+    "origin": "bad omens",
+    "target": "thousand below",
+    "type": "similarity",
+    "weight": 0.596327
+  },
+  {
+    "origin": "bad omens",
+    "target": "wage war",
+    "type": "similarity",
+    "weight": 0.575327
+  },
+  {
+    "origin": "bad omens",
+    "target": "rain city drive",
+    "type": "similarity",
+    "weight": 0.574246
+  },
+  {
+    "origin": "bad omens",
+    "target": "until i wake",
+    "type": "similarity",
+    "weight": 0.558955
+  },
+  {
+    "origin": "bad omens",
+    "target": "sleep theory",
+    "type": "similarity",
+    "weight": 0.511961
+  },
+  {
+    "origin": "bad omens",
+    "target": "imminence",
+    "type": "similarity",
+    "weight": 0.509738
+  },
+  {
+    "origin": "bad omens",
+    "target": "if not for me",
+    "type": "similarity",
+    "weight": 0.50013
+  },
+  {
+    "origin": "bad omens",
+    "target": "the word alive",
+    "type": "similarity",
+    "weight": 0.484716
+  },
+  {
+    "origin": "bad omens",
+    "target": "awaken i am",
+    "type": "similarity",
+    "weight": 0.45338
+  },
+  {
+    "origin": "bad omens",
+    "target": "ice nine kills",
+    "type": "similarity",
+    "weight": 0.450816
+  },
+  {
+    "origin": "bad omens",
+    "target": "memphis may fire",
+    "type": "similarity",
+    "weight": 0.450129
+  },
+  {
+    "origin": "bad omens",
+    "target": "asking alexandria",
+    "type": "similarity",
+    "weight": 0.437511
+  },
+  {
+    "origin": "bad omens",
+    "target": "i see stars",
+    "type": "similarity",
+    "weight": 0.414327
+  },
+  {
+    "origin": "bad omens",
+    "target": "crown the empire",
+    "type": "similarity",
+    "weight": 0.398848
+  },
+  {
+    "origin": "bad omens",
+    "target": "falling in reverse",
+    "type": "similarity",
+    "weight": 0.397723
+  },
+  {
+    "origin": "bad omens",
+    "target": "beartooth",
+    "type": "similarity",
+    "weight": 0.385931
+  },
+  {
+    "origin": "bad omens",
+    "target": "windwaker",
+    "type": "similarity",
+    "weight": 0.38181
+  },
+  {
+    "origin": "bad omens",
+    "target": "holding absence",
+    "type": "similarity",
+    "weight": 0.369009
+  },
+  {
+    "origin": "bad omens",
+    "target": "bring me the horizon, lil uzi vert, daryl palumbo, glassjaw",
+    "type": "similarity",
+    "weight": 0.362158
+  },
+  {
+    "origin": "bad omens",
+    "target": "currents",
+    "type": "similarity",
+    "weight": 0.358478
+  },
+  {
+    "origin": "bad omens",
+    "target": "wind walkers",
+    "type": "similarity",
+    "weight": 0.354493
+  },
+  {
+    "origin": "bad omens",
+    "target": "silent planet",
+    "type": "similarity",
+    "weight": 0.353527
+  },
+  {
+    "origin": "bad omens",
+    "target": "bring me the horizon, aurora",
+    "type": "similarity",
+    "weight": 0.35129
+  },
+  {
+    "origin": "bad omens",
+    "target": "of mice & men",
+    "type": "similarity",
+    "weight": 0.350453
+  },
+  {
+    "origin": "bad omens",
+    "target": "while she sleeps",
+    "type": "similarity",
+    "weight": 0.348873
+  },
+  {
+    "origin": "bad omens",
+    "target": "polaris",
+    "type": "similarity",
+    "weight": 0.341958
+  },
+  {
+    "origin": "bad omens",
+    "target": "black veil brides",
+    "type": "similarity",
+    "weight": 0.337855
+  },
+  {
+    "origin": "bad omens",
+    "target": "dark divine",
+    "type": "similarity",
+    "weight": 0.3371
+  },
+  {
+    "origin": "bad omens",
+    "target": "fit for a king",
+    "type": "similarity",
+    "weight": 0.328005
+  },
+  {
+    "origin": "bad omens",
+    "target": "erra",
+    "type": "similarity",
+    "weight": 0.327829
+  },
+  {
+    "origin": "bad omens",
+    "target": "normandie",
+    "type": "similarity",
+    "weight": 0.324099
+  },
+  {
+    "origin": "bad omens",
+    "target": "memorist",
+    "type": "similarity",
+    "weight": 0.322954
+  },
+  {
+    "origin": "bad omens",
+    "target": "arankai",
+    "type": "similarity",
+    "weight": 0.318889
+  },
+  {
+    "origin": "bad omens",
+    "target": "conquer divide",
+    "type": "similarity",
+    "weight": 0.318685
+  },
+  {
+    "origin": "bad omens",
+    "target": "the devil wears prada",
+    "type": "similarity",
+    "weight": 0.316353
+  },
+  {
+    "origin": "bad omens",
+    "target": "we came as romans",
+    "type": "similarity",
+    "weight": 0.315878
+  },
+  {
+    "origin": "bad omens",
+    "target": "thornhill",
+    "type": "similarity",
+    "weight": 0.307859
+  },
+  {
+    "origin": "bad omens",
+    "target": "point north",
+    "type": "similarity",
+    "weight": 0.305641
+  },
+  {
+    "origin": "bad omens",
+    "target": "kingdom of giants",
+    "type": "similarity",
+    "weight": 0.298955
+  },
+  {
+    "origin": "bad omens",
+    "target": "archers",
+    "type": "similarity",
+    "weight": 0.298375
+  },
+  {
+    "origin": "bad omens",
+    "target": "president",
+    "type": "similarity",
+    "weight": 0.297706
+  },
+  {
+    "origin": "bad omens",
+    "target": "of virtue",
+    "type": "similarity",
+    "weight": 0.294692
+  },
+  {
+    "origin": "bad omens",
+    "target": "savage hands",
+    "type": "similarity",
+    "weight": 0.292919
+  },
+  {
+    "origin": "bad omens",
+    "target": "invent animate",
+    "type": "similarity",
+    "weight": 0.290568
+  },
+  {
+    "origin": "bad omens",
+    "target": "nothing more",
+    "type": "similarity",
+    "weight": 0.285432
+  },
+  {
+    "origin": "bad omens",
+    "target": "thrown",
+    "type": "similarity",
+    "weight": 0.280075
+  },
+  {
+    "origin": "bad omens",
+    "target": "annisokay",
+    "type": "similarity",
+    "weight": 0.279209
+  },
+  {
+    "origin": "bad omens",
+    "target": "palisades",
+    "type": "similarity",
+    "weight": 0.275111
+  },
+  {
+    "origin": "bad omens",
+    "target": "slaves",
+    "type": "similarity",
+    "weight": 0.272081
+  },
+  {
+    "origin": "bad omens",
+    "target": "like moths to flames",
+    "type": "similarity",
+    "weight": 0.267367
+  },
+  {
+    "origin": "bad omens",
+    "target": "bullet for my valentine",
+    "type": "similarity",
+    "weight": 0.266433
+  },
+  {
+    "origin": "bad omens",
+    "target": "landmvrks",
+    "type": "similarity",
+    "weight": 0.262836
+  },
+  {
+    "origin": "bad omens",
+    "target": "drag me out",
+    "type": "similarity",
+    "weight": 0.260706
+  },
+  {
+    "origin": "bad omens",
+    "target": "fame on fire",
+    "type": "similarity",
+    "weight": 0.258395
+  },
+  {
+    "origin": "bad omens",
+    "target": "alpha wolf",
+    "type": "similarity",
+    "weight": 0.257742
+  },
+  {
+    "origin": "bad omens",
+    "target": "boston manor",
+    "type": "similarity",
+    "weight": 0.257468
+  },
+  {
+    "origin": "bad omens",
+    "target": "the amity affliction",
+    "type": "similarity",
+    "weight": 0.256908
+  },
+  {
+    "origin": "bad omens",
+    "target": "gh\u00f8stkid",
+    "type": "similarity",
+    "weight": 0.252359
+  },
+  {
+    "origin": "bad omens",
+    "target": "electric callboy",
+    "type": "similarity",
+    "weight": 0.252045
+  },
+  {
+    "origin": "bad omens",
+    "target": "the pretty wild",
+    "type": "similarity",
+    "weight": 0.25204
+  },
+  {
+    "origin": "bad omens",
+    "target": "a day to remember",
+    "type": "similarity",
+    "weight": 0.25078
+  },
+  {
+    "origin": "bad omens",
+    "target": "picturesque",
+    "type": "similarity",
+    "weight": 0.246924
+  },
+  {
+    "origin": "bad omens",
+    "target": "sleeping with sirens",
+    "type": "similarity",
+    "weight": 0.244698
+  },
+  {
+    "origin": "bad omens",
+    "target": "ghost atlas",
+    "type": "similarity",
+    "weight": 0.236653
+  },
+  {
+    "origin": "bad omens",
+    "target": "knocked loose",
+    "type": "similarity",
+    "weight": 0.234623
+  },
+  {
+    "origin": "bad omens",
+    "target": "villain of the story",
+    "type": "similarity",
+    "weight": 0.232536
+  },
+  {
+    "origin": "bad omens",
+    "target": "not enough space",
+    "type": "similarity",
+    "weight": 0.232148
+  },
+  {
+    "origin": "bad omens",
+    "target": "don broco",
+    "type": "similarity",
+    "weight": 0.229997
+  },
+  {
+    "origin": "bad omens",
+    "target": "landon tewers",
+    "type": "similarity",
+    "weight": 0.229433
+  },
+  {
+    "origin": "bad omens",
+    "target": "in this moment",
+    "type": "similarity",
+    "weight": 0.226829
+  },
+  {
+    "origin": "bad omens",
+    "target": "northlane",
+    "type": "similarity",
+    "weight": 0.226509
+  },
+  {
+    "origin": "bad omens",
+    "target": "bury tomorrow",
+    "type": "similarity",
+    "weight": 0.225664
+  },
+  {
+    "origin": "bad omens",
+    "target": "cane hill",
+    "type": "similarity",
+    "weight": 0.221485
+  },
+  {
+    "origin": "bad omens",
+    "target": "future palace",
+    "type": "similarity",
+    "weight": 0.219216
+  },
+  {
+    "origin": "bad omens",
+    "target": "stain the canvas",
+    "type": "similarity",
+    "weight": 0.217333
+  },
+  {
+    "origin": "bad omens",
+    "target": "ocean sleeper",
+    "type": "similarity",
+    "weight": 0.215798
+  },
+  {
+    "origin": "bad omens",
+    "target": "knocked loose, poppy",
+    "type": "similarity",
+    "weight": 0.203879
+  },
+  {
+    "origin": "bad omens",
+    "target": "our mirage",
+    "type": "similarity",
+    "weight": 0.203282
+  },
+  {
+    "origin": "bad omens",
+    "target": "poppy",
+    "type": "similarity",
+    "weight": 0.202534
+  },
+  {
+    "origin": "bad omens",
+    "target": "tropic gold",
+    "type": "similarity",
+    "weight": 0.200763
+  },
+  {
+    "origin": "bad omens",
+    "target": "as everything unfolds",
+    "type": "similarity",
+    "weight": 0.198392
+  },
+  {
+    "origin": "bad omens",
+    "target": "blessthefall",
+    "type": "similarity",
+    "weight": 0.197808
+  },
+  {
+    "origin": "bad omens",
+    "target": "revnoir",
+    "type": "similarity",
+    "weight": 0.197335
+  },
+  {
+    "origin": "bad omens",
+    "target": "static dress",
+    "type": "similarity",
+    "weight": 0.194242
+  },
+  {
+    "origin": "bad omens",
+    "target": "hands like houses",
+    "type": "similarity",
+    "weight": 0.192946
+  },
+  {
+    "origin": "bad omens",
+    "target": "resolve",
+    "type": "similarity",
+    "weight": 0.191764
+  },
+  {
+    "origin": "bad omens",
+    "target": "atreyu",
+    "type": "similarity",
+    "weight": 0.191577
+  },
+  {
+    "origin": "bad omens",
+    "target": "glasslands",
+    "type": "similarity",
+    "weight": 0.188851
+  },
+  {
+    "origin": "waterparks",
+    "target": "with confidence",
+    "type": "similarity",
+    "weight": 1.0
+  },
+  {
+    "origin": "waterparks",
+    "target": "stand atlantic",
+    "type": "similarity",
+    "weight": 0.907622
+  },
+  {
+    "origin": "waterparks",
+    "target": "fall out boy",
+    "type": "similarity",
+    "weight": 0.843195
+  },
+  {
+    "origin": "waterparks",
+    "target": "makeout",
+    "type": "similarity",
+    "weight": 0.781929
+  },
+  {
+    "origin": "waterparks",
+    "target": "all time low",
+    "type": "similarity",
+    "weight": 0.711952
+  },
+  {
+    "origin": "waterparks",
+    "target": "as it is",
+    "type": "similarity",
+    "weight": 0.707777
+  },
+  {
+    "origin": "waterparks",
+    "target": "honey revenge",
+    "type": "similarity",
+    "weight": 0.707536
+  },
+  {
+    "origin": "waterparks",
+    "target": "set it off",
+    "type": "similarity",
+    "weight": 0.671295
+  },
+  {
+    "origin": "waterparks",
+    "target": "anarbor",
+    "type": "similarity",
+    "weight": 0.629722
+  },
+  {
+    "origin": "waterparks",
+    "target": "hot milk",
+    "type": "similarity",
+    "weight": 0.627342
+  },
+  {
+    "origin": "waterparks",
+    "target": "the wrecks",
+    "type": "similarity",
+    "weight": 0.587425
+  },
+  {
+    "origin": "waterparks",
+    "target": "cobra starship",
+    "type": "similarity",
+    "weight": 0.586712
+  },
+  {
+    "origin": "waterparks",
+    "target": "panic! at the disco",
+    "type": "similarity",
+    "weight": 0.576365
+  },
+  {
+    "origin": "waterparks",
+    "target": "the home team",
+    "type": "similarity",
+    "weight": 0.561196
+  },
+  {
+    "origin": "waterparks",
+    "target": "simple creatures",
+    "type": "similarity",
+    "weight": 0.55053
+  },
+  {
+    "origin": "waterparks",
+    "target": "state champs",
+    "type": "similarity",
+    "weight": 0.521322
+  },
+  {
+    "origin": "waterparks",
+    "target": "patrick stump",
+    "type": "similarity",
+    "weight": 0.51956
+  },
+  {
+    "origin": "waterparks",
+    "target": "arrows in action",
+    "type": "similarity",
+    "weight": 0.519292
+  },
+  {
+    "origin": "waterparks",
+    "target": "between you & me",
+    "type": "similarity",
+    "weight": 0.506523
+  },
+  {
+    "origin": "waterparks",
+    "target": "5 seconds of summer",
+    "type": "similarity",
+    "weight": 0.497739
+  },
+  {
+    "origin": "waterparks",
+    "target": "broadside",
+    "type": "similarity",
+    "weight": 0.4825
+  },
+  {
+    "origin": "waterparks",
+    "target": "noahfinnce",
+    "type": "similarity",
+    "weight": 0.480894
+  },
+  {
+    "origin": "waterparks",
+    "target": "artist vs. poet",
+    "type": "similarity",
+    "weight": 0.466008
+  },
+  {
+    "origin": "waterparks",
+    "target": "the maine",
+    "type": "similarity",
+    "weight": 0.459658
+  },
+  {
+    "origin": "waterparks",
+    "target": "the academy is...",
+    "type": "similarity",
+    "weight": 0.456899
+  },
+  {
+    "origin": "waterparks",
+    "target": "neck deep",
+    "type": "similarity",
+    "weight": 0.434341
+  },
+  {
+    "origin": "waterparks",
+    "target": "phem",
+    "type": "similarity",
+    "weight": 0.432213
+  },
+  {
+    "origin": "waterparks",
+    "target": "mayday parade",
+    "type": "similarity",
+    "weight": 0.402492
+  },
+  {
+    "origin": "waterparks",
+    "target": "marianas trench",
+    "type": "similarity",
+    "weight": 0.396081
+  },
+  {
+    "origin": "waterparks",
+    "target": "grayscale",
+    "type": "similarity",
+    "weight": 0.389396
+  },
+  {
+    "origin": "waterparks",
+    "target": "the cab",
+    "type": "similarity",
+    "weight": 0.380988
+  },
+  {
+    "origin": "waterparks",
+    "target": "you me at six",
+    "type": "similarity",
+    "weight": 0.373285
+  },
+  {
+    "origin": "waterparks",
+    "target": "beauty school dropout",
+    "type": "similarity",
+    "weight": 0.366607
+  },
+  {
+    "origin": "waterparks",
+    "target": "forever the sickest kids",
+    "type": "similarity",
+    "weight": 0.354434
+  },
+  {
+    "origin": "waterparks",
+    "target": "the regrettes",
+    "type": "similarity",
+    "weight": 0.349755
+  },
+  {
+    "origin": "waterparks",
+    "target": "we are the in crowd",
+    "type": "similarity",
+    "weight": 0.349649
+  },
+  {
+    "origin": "waterparks",
+    "target": "the summer set",
+    "type": "similarity",
+    "weight": 0.343591
+  },
+  {
+    "origin": "waterparks",
+    "target": "cute is what we aim for",
+    "type": "similarity",
+    "weight": 0.339396
+  },
+  {
+    "origin": "waterparks",
+    "target": "point north",
+    "type": "similarity",
+    "weight": 0.328138
+  },
+  {
+    "origin": "waterparks",
+    "target": "charlotte sands",
+    "type": "similarity",
+    "weight": 0.322
+  },
+  {
+    "origin": "waterparks",
+    "target": "yours truly",
+    "type": "similarity",
+    "weight": 0.317794
+  },
+  {
+    "origin": "waterparks",
+    "target": "against the current",
+    "type": "similarity",
+    "weight": 0.313502
+  },
+  {
+    "origin": "waterparks",
+    "target": "bearings",
+    "type": "similarity",
+    "weight": 0.312063
+  },
+  {
+    "origin": "waterparks",
+    "target": "hot mulligan",
+    "type": "similarity",
+    "weight": 0.310674
+  },
+  {
+    "origin": "waterparks",
+    "target": "meet me @ the altar",
+    "type": "similarity",
+    "weight": 0.300619
+  },
+  {
+    "origin": "waterparks",
+    "target": "boys like girls",
+    "type": "similarity",
+    "weight": 0.292953
+  },
+  {
+    "origin": "waterparks",
+    "target": "telltale",
+    "type": "similarity",
+    "weight": 0.285379
+  },
+  {
+    "origin": "waterparks",
+    "target": "make out monday",
+    "type": "similarity",
+    "weight": 0.282523
+  },
+  {
+    "origin": "waterparks",
+    "target": "first and forever",
+    "type": "similarity",
+    "weight": 0.281619
+  },
+  {
+    "origin": "waterparks",
+    "target": "paramore",
+    "type": "similarity",
+    "weight": 0.280709
+  },
+  {
+    "origin": "waterparks",
+    "target": "tx2",
+    "type": "similarity",
+    "weight": 0.276718
+  },
+  {
+    "origin": "waterparks",
+    "target": "games we play",
+    "type": "similarity",
+    "weight": 0.262279
+  },
+  {
+    "origin": "waterparks",
+    "target": "tonight alive",
+    "type": "similarity",
+    "weight": 0.261582
+  },
+  {
+    "origin": "waterparks",
+    "target": "we the kings",
+    "type": "similarity",
+    "weight": 0.26059
+  },
+  {
+    "origin": "waterparks",
+    "target": "luke hemmings",
+    "type": "similarity",
+    "weight": 0.260474
+  },
+  {
+    "origin": "waterparks",
+    "target": "real friends",
+    "type": "similarity",
+    "weight": 0.259754
+  },
+  {
+    "origin": "waterparks",
+    "target": "the all-american rejects",
+    "type": "similarity",
+    "weight": 0.259005
+  },
+  {
+    "origin": "waterparks",
+    "target": "l\u00f8l\u00f8",
+    "type": "similarity",
+    "weight": 0.255698
+  },
+  {
+    "origin": "waterparks",
+    "target": "hey monday",
+    "type": "similarity",
+    "weight": 0.245045
+  },
+  {
+    "origin": "waterparks",
+    "target": "seaway",
+    "type": "similarity",
+    "weight": 0.24464
+  },
+  {
+    "origin": "waterparks",
+    "target": "knuckle puck",
+    "type": "similarity",
+    "weight": 0.242416
+  },
+  {
+    "origin": "waterparks",
+    "target": "maggie lindemann",
+    "type": "similarity",
+    "weight": 0.241388
+  },
+  {
+    "origin": "waterparks",
+    "target": "cartel",
+    "type": "similarity",
+    "weight": 0.240293
+  },
+  {
+    "origin": "waterparks",
+    "target": "the story so far",
+    "type": "similarity",
+    "weight": 0.232675
+  },
+  {
+    "origin": "waterparks",
+    "target": "royal & the serpent",
+    "type": "similarity",
+    "weight": 0.231619
+  },
+  {
+    "origin": "waterparks",
+    "target": "magnolia park",
+    "type": "similarity",
+    "weight": 0.229875
+  },
+  {
+    "origin": "waterparks",
+    "target": "every avenue",
+    "type": "similarity",
+    "weight": 0.226012
+  },
+  {
+    "origin": "waterparks",
+    "target": "midtown",
+    "type": "similarity",
+    "weight": 0.223883
+  },
+  {
+    "origin": "waterparks",
+    "target": "pvris",
+    "type": "similarity",
+    "weight": 0.223162
+  },
+  {
+    "origin": "waterparks",
+    "target": "chase petra",
+    "type": "similarity",
+    "weight": 0.222931
+  },
+  {
+    "origin": "waterparks",
+    "target": "young culture",
+    "type": "similarity",
+    "weight": 0.217537
+  },
+  {
+    "origin": "waterparks",
+    "target": "boston manor",
+    "type": "similarity",
+    "weight": 0.217372
+  },
+  {
+    "origin": "waterparks",
+    "target": "sueco",
+    "type": "similarity",
+    "weight": 0.20934
+  },
+  {
+    "origin": "waterparks",
+    "target": "doll skin",
+    "type": "similarity",
+    "weight": 0.199125
+  },
+  {
+    "origin": "waterparks",
+    "target": "michael clifford",
+    "type": "similarity",
+    "weight": 0.19373
+  },
+  {
+    "origin": "waterparks",
+    "target": "taylor acorn",
+    "type": "similarity",
+    "weight": 0.193116
+  },
+  {
+    "origin": "waterparks",
+    "target": "pale waves",
+    "type": "similarity",
+    "weight": 0.192545
+  },
+  {
+    "origin": "waterparks",
+    "target": "trash boat",
+    "type": "similarity",
+    "weight": 0.191215
+  },
+  {
+    "origin": "waterparks",
+    "target": "hey violet",
+    "type": "similarity",
+    "weight": 0.18939
+  },
+  {
+    "origin": "waterparks",
+    "target": "pinkshift",
+    "type": "similarity",
+    "weight": 0.187992
+  },
+  {
+    "origin": "waterparks",
+    "target": "blink-182",
+    "type": "similarity",
+    "weight": 0.187253
+  },
+  {
+    "origin": "waterparks",
+    "target": "wstr",
+    "type": "similarity",
+    "weight": 0.186986
+  },
+  {
+    "origin": "waterparks",
+    "target": "super american",
+    "type": "similarity",
+    "weight": 0.182363
+  },
+  {
+    "origin": "waterparks",
+    "target": "tyler posey",
+    "type": "similarity",
+    "weight": 0.178485
+  },
+  {
+    "origin": "waterparks",
+    "target": "swmrs",
+    "type": "similarity",
+    "weight": 0.175574
+  },
+  {
+    "origin": "waterparks",
+    "target": "the starting line",
+    "type": "similarity",
+    "weight": 0.175507
+  },
+  {
+    "origin": "waterparks",
+    "target": "trophy eyes",
+    "type": "similarity",
+    "weight": 0.175429
+  },
+  {
+    "origin": "waterparks",
+    "target": "bowling for soup",
+    "type": "similarity",
+    "weight": 0.173525
+  },
+  {
+    "origin": "waterparks",
+    "target": "jxdn",
+    "type": "similarity",
+    "weight": 0.165347
+  },
+  {
+    "origin": "waterparks",
+    "target": "oh, weatherly",
+    "type": "similarity",
+    "weight": 0.165029
+  },
+  {
+    "origin": "waterparks",
+    "target": "say anything",
+    "type": "similarity",
+    "weight": 0.164512
+  },
+  {
+    "origin": "waterparks",
+    "target": "go radio",
+    "type": "similarity",
+    "weight": 0.163881
+  },
+  {
+    "origin": "waterparks",
+    "target": "ludo",
+    "type": "similarity",
+    "weight": 0.163784
+  },
+  {
+    "origin": "waterparks",
+    "target": "patent pending",
+    "type": "similarity",
+    "weight": 0.159954
+  },
+  {
+    "origin": "waterparks",
+    "target": "hayley williams",
+    "type": "similarity",
+    "weight": 0.159053
+  },
+  {
+    "origin": "waterparks",
+    "target": "hedley",
+    "type": "similarity",
+    "weight": 0.156458
+  },
+  {
+    "origin": "waterparks",
+    "target": "simple plan",
+    "type": "similarity",
+    "weight": 0.156065
+  },
+  {
+    "origin": "waterparks",
+    "target": "motion city soundtrack",
+    "type": "similarity",
+    "weight": 0.153663
+  },
+  {
+    "origin": "waterparks",
+    "target": "mgk",
+    "type": "similarity",
+    "weight": 0.153344
+  },
+  {
+    "origin": "waterparks",
+    "target": "in her own words",
+    "type": "similarity",
+    "weight": 0.15163
+  },
+  {
+    "origin": "thornhill",
+    "target": "silly goose",
+    "type": "tour",
+    "weight": 1.0
+  },
+  {
+    "origin": "thornhill",
+    "target": "landmvrks",
+    "type": "tour",
+    "weight": 1.0
+  },
+  {
+    "origin": "thornhill",
+    "target": "ocean grove",
+    "type": "tour",
+    "weight": 1.0
+  },
+  {
+    "origin": "thornhill",
+    "target": "resolve",
+    "type": "tour",
+    "weight": 1.0
+  },
+  {
+    "origin": "thornhill",
+    "target": "louder than life",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "slayer",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "avenged sevenfold",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "deftones",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "lamb of god",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "breaking benjamin",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "a perfect circle",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "evanescence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "down",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "mudvayne",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "stone temple pilots",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "knocked loose",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "cavalera",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "insane clown posse",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "acid bath",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "slaughter to prevail",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "carcass",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "municipal waste",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "winds of plague",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "static-x",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "dope",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "nonpoint",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "failure",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "superheaven",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "quannnic",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "bilmuri",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "memphis may fire",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "escape the fate",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "rob zombie",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "sleep token",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "bad omens",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "$uicideboy$",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "marilyn manson",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "spiritbox",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "i prevail",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "three days grace",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "cannibal corpse",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "dayseeker",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "motionless in white",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "wage war",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "exodus",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "black veil brides",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "we came as romans",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "the black dahlia murder",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "fear factory",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "fulci",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "imminence",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "northlane",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "violent vira",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "fleshwater",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "the funeral portrait",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "return to dust",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "tech n9ne",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "the plot in you",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "sleep theory",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "kublai khan tx",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "brand of sacrifice",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "sanguisugabogg",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "full of hell",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "left to suffer",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "not enough space",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "all time low",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "hollywood undead",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "story of the year",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "of mice & men",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "magnolia park",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "the red jumpsuit apparatus",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "hot milk",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "trivium",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "machine head",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "chimaira",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "august burns red",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "devildriver",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "spiritworld",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "disembodied tyrant",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "flyleaf",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "hinder",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "crossfade",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "10 years",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "rev theory",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "12 stones",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "the story so far",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "dream theater",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "cypress hill",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "bruce dickinson",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "from ashes to new",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "hatebreed",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "the dillinger escape plan",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "neck deep",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "powerwolf",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "kittie",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "testament",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "state champs",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "drain",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "scowl",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "gideon",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "guilt trip",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "dragonforce",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "alestorm",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "demon hunter",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "gloryhammer",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "liliac",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "stabbing westward",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "spineshank",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "snot",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "the union underground",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "queensryche",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "sebastian bach",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "accept",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "yngwie malmsteen",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "set it off",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "catch your breath",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "landmvrks",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "colorblind",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "if not for me",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "suicide silence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "miss may i",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "thrown",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "thornhill",
+    "target": "walls of jericho",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "letlive",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "blessthefall",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "hawthorne heights",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "from first to last",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "attack attack!",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "woe, is me",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "aftershock",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "blink-182",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "korn",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "bring me the horizon",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "good charlotte",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "chiodos",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "turnstile",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "gojira",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "taking back sunday",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "chevelle",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "alkaline trio",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "hoobastank",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "the ataris",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "basement",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "glare",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "saliva",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "the all-american rejects",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "in this moment",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "mom jeans",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "kerry king",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "bowling for soup",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "lacuna coil",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "scary kids scaring kids",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "power trip",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "pop evil",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "high on fire",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "cattle decapitation",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "nails",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "dry kill logic",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "death angel",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "forbidden",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "dying fetus",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "seven hours after violet",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "born of osiris",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "sick puppies",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "trash talk",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "gwar",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "all shall perish",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "speed",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "spite",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "get scared",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "dying wish",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "xibalba",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "snuffed on sight",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "spy",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "3 inches of blood",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "six feet under",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "thornhill",
+    "target": "prong",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "louder than life",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "slayer",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "avenged sevenfold",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "deftones",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "lamb of god",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "breaking benjamin",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "a perfect circle",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "evanescence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "down",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "mudvayne",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "stone temple pilots",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "knocked loose",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "cavalera",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "insane clown posse",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "acid bath",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "slaughter to prevail",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "carcass",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "municipal waste",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "winds of plague",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "static-x",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "dope",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "nonpoint",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "failure",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "superheaven",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "quannnic",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "bilmuri",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "memphis may fire",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "escape the fate",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "rob zombie",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "sleep token",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "$uicideboy$",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "marilyn manson",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "spiritbox",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "i prevail",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "three days grace",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "cannibal corpse",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "dayseeker",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "motionless in white",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "wage war",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "exodus",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "black veil brides",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "we came as romans",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "the black dahlia murder",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "fear factory",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "fulci",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "imminence",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "northlane",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "violent vira",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "fleshwater",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "the funeral portrait",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "return to dust",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "tech n9ne",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "the plot in you",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "sleep theory",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "kublai khan tx",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "brand of sacrifice",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "sanguisugabogg",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "full of hell",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "left to suffer",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "not enough space",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "all time low",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "hollywood undead",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "story of the year",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "of mice & men",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "magnolia park",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "the red jumpsuit apparatus",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "hot milk",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "trivium",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "machine head",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "chimaira",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "august burns red",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "devildriver",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "spiritworld",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "disembodied tyrant",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "flyleaf",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "hinder",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "crossfade",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "10 years",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "rev theory",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "12 stones",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "the story so far",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "dream theater",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "cypress hill",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "bruce dickinson",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "from ashes to new",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "hatebreed",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "the dillinger escape plan",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "neck deep",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "powerwolf",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "kittie",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "testament",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "state champs",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "drain",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "scowl",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "gideon",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "guilt trip",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "dragonforce",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "alestorm",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "demon hunter",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "gloryhammer",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "liliac",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "stabbing westward",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "spineshank",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "snot",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "the union underground",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "queensryche",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "sebastian bach",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "accept",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "yngwie malmsteen",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "set it off",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "catch your breath",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "landmvrks",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "colorblind",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "if not for me",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "suicide silence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "miss may i",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "thrown",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "walls of jericho",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "thornhill",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "bad omens",
+    "target": "letlive",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "blessthefall",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "hawthorne heights",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "from first to last",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "attack attack!",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "woe, is me",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "aftershock",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "blink-182",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "korn",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "bring me the horizon",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "good charlotte",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "chiodos",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "turnstile",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "gojira",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "taking back sunday",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "chevelle",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "alkaline trio",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "hoobastank",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "the ataris",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "basement",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "glare",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "saliva",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "the all-american rejects",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "in this moment",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "mom jeans",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "kerry king",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "bowling for soup",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "lacuna coil",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "scary kids scaring kids",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "power trip",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "pop evil",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "high on fire",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "cattle decapitation",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "nails",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "dry kill logic",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "death angel",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "forbidden",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "dying fetus",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "seven hours after violet",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "born of osiris",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "sick puppies",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "trash talk",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "gwar",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "all shall perish",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "speed",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "spite",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "get scared",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "dying wish",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "xibalba",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "snuffed on sight",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "spy",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "3 inches of blood",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "six feet under",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "bad omens",
+    "target": "prong",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "leeds festival",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "travis scott",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "sammy virji",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "trippie redd",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "amyl and the sniffers",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "antony szmierek",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "the dare",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "dj ez",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "girls don't sync",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "good kid",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "lancey foux",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "luvcat",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "nieve ella",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "sea girls",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "songer",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "d-block europe",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "aviva",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "balu brigada",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "matilda mann",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "nell mescal",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "suki waterhouse",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "del water gap",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "demae",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "late night drive home",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "skye newman",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "bartees strange",
+    "type": "festival",
+    "weight": 2
+  },
+  {
+    "origin": "waterparks",
+    "target": "p-rallel",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "reading festival",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "leigh-anne pinnock",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "lyvia",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "amie blu",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "disrupta",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "waterparks",
+    "target": "jaackmaate's happy hour live",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "honey revenge",
+    "type": "tour",
+    "weight": 1.0
+  },
+  {
+    "origin": "spiritbox",
+    "target": "periphery",
+    "type": "tour",
+    "weight": 1.0
+  },
+  {
+    "origin": "spiritbox",
+    "target": "louder than life",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "slayer",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "avenged sevenfold",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "deftones",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "lamb of god",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "breaking benjamin",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "a perfect circle",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "evanescence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "down",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "mudvayne",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "stone temple pilots",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "knocked loose",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "cavalera",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "insane clown posse",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "acid bath",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "slaughter to prevail",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "carcass",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "municipal waste",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "winds of plague",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "static-x",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "dope",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "nonpoint",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "failure",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "superheaven",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "quannnic",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "bilmuri",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "memphis may fire",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "escape the fate",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "rob zombie",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "sleep token",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "bad omens",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "$uicideboy$",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "marilyn manson",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "i prevail",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "three days grace",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "cannibal corpse",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "dayseeker",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "motionless in white",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "wage war",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "exodus",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "black veil brides",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "we came as romans",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the black dahlia murder",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "fear factory",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "fulci",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "imminence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "northlane",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "violent vira",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "fleshwater",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the funeral portrait",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "return to dust",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "tech n9ne",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the plot in you",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "sleep theory",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "kublai khan tx",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "brand of sacrifice",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "sanguisugabogg",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "full of hell",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "left to suffer",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "not enough space",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "all time low",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "hollywood undead",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "story of the year",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "of mice & men",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "magnolia park",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the red jumpsuit apparatus",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "hot milk",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "trivium",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "machine head",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "chimaira",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "august burns red",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "devildriver",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "spiritworld",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "disembodied tyrant",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "flyleaf",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "hinder",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "crossfade",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "10 years",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "rev theory",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "12 stones",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the story so far",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "dream theater",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "cypress hill",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "bruce dickinson",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "from ashes to new",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "hatebreed",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the dillinger escape plan",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "neck deep",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "powerwolf",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "kittie",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "testament",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "state champs",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "drain",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "scowl",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "gideon",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "guilt trip",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "dragonforce",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "alestorm",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "demon hunter",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "gloryhammer",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "liliac",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "stabbing westward",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "spineshank",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "snot",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "the union underground",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "queensryche",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "sebastian bach",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "accept",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "yngwie malmsteen",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "set it off",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "catch your breath",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "landmvrks",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "colorblind",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "if not for me",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "suicide silence",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "miss may i",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "thrown",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "walls of jericho",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "thornhill",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "letlive",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "blessthefall",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "hawthorne heights",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "from first to last",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "attack attack!",
+    "type": "festival",
+    "weight": 1
+  },
+  {
+    "origin": "spiritbox",
+    "target": "woe, is me",
+    "type": "festival",
+    "weight": 1
+  }
+]
